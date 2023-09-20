@@ -2,6 +2,7 @@ const router = require("express").Router();
 let Customer = require("../models/Customer.model");
 
 router.route("/").get((req, res) => {
+  console.log("<===== Get Customers ====>");
   Customer.find()
     .then((Customer) => res.json(Customer))
     .catch((err) => res.status(400).json("Error: " + err));
