@@ -21,12 +21,12 @@ connection.once("open", () => {
   console.log("<=== MongoDB database connection successfully ===>");
 });
 
-const CustomerRouter = require("./routes/Customer");
-const EmployeeRouter = require("./routes/Employee");
+const UserRouter = require("./routes/User");
+const EventRouter = require("./routes/Event");
 const TaskRouter = require("./routes/Task");
 
-app.use("/Customer", CustomerRouter);
-app.use("/Employee", EmployeeRouter);
+app.use("/user", UserRouter);
+app.use("/event", EventRouter);
 app.use("/Task", TaskRouter);
 
 app.listen(port, () => {
