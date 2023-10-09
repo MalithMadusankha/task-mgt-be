@@ -24,10 +24,12 @@ connection.once("open", () => {
 const UserRouter = require("./routes/User");
 const EventRouter = require("./routes/Event");
 const TaskRouter = require("./routes/Task");
+const EmailRouter = require("./routes/Email");
 
 app.use("/user", UserRouter);
 app.use("/event", EventRouter);
 app.use("/Task", TaskRouter);
+app.use("/Email", EmailRouter);
 
 app.listen(port, () => {
   console.log(` <======= Server is running on port: ${port} ======>`);

@@ -17,7 +17,8 @@
         "dotenv": "^8.6.0",
         "express": "^4.17.1",
         "firebase-admin": "^11.10.1",
-        "mongoose": "^5.13.8"
+        "mongoose": "^5.13.8",
+        "nodemailer": "^6.9.5"
     },
     "description": "",
     "devDependencies": {
